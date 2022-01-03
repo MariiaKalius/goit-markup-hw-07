@@ -1,0 +1,202 @@
+.footer {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .footer-social__title {
+    @include font(14px, 700, 16px, 0.03em);
+    text-transform: uppercase;
+    color: var(--main-btn-color);
+    margin-bottom: 20px;
+    
+  }
+  
+  .footer-social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--main-btn-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: var(--second-accent-color);
+    }
+    &:focus {
+      background-color: var(--second-accent-color);
+    }
+  }
+  
+  
+  .footer-social__icon {
+    fill: currentColor;
+  }
+  
+  
+  
+  .footer-social-list__item {
+    color: var(--main-btn-color);
+    width: 44px;
+    height: 44px;
+  
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .footer-social-list {
+    display: flex;
+    /* margin-left: 70px; */
+  }
+  
+  .contacts-address {
+    margin-top: 20px;
+  }
+  
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .footer_logo--web-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  
+  .footer_logo--logo-studio {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+  }
+  
+  .contacts__mailto {
+    @include font(14px, 400, 1.71, 0.03em);
+    font-style: normal;
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: var(--main-title-color);
+    }
+    &:focus {
+      color: var(--main-title-color);
+    }
+  } 
+  
+  
+  .contacts__tel {
+    @include font(14px, 400, 1.71, 0.03em);
+    font-style: normal;
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: var(--main-title-color);
+    }
+    &:focus {
+      color: var(--main-title-color);
+    }
+  }
+  
+  
+  .contacts-list__item {
+    @include font(14px, 400, 1.71, 0.03em);
+    margin-bottom: 9px;
+    font-style: normal;
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: var(--main-title-color);
+    }
+    &:focus {
+      color: var(--main-title-color);
+    }
+  }
+  
+  
+  .footer-mailing__title {
+    @include font(14px, 700, 16px, 0.03em);
+    text-transform: uppercase;
+  
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .input__mail {
+    margin-right: 17px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 10px 15px 16px;
+    color: white;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      border-color: #2196f3;
+      outline: none;
+    }
+    &::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  
+  
+  .mailing__blok {
+    display: flex;
+    /* margin-left: 94px; */
+  }
+  
+  
+  
+  .btn__mailing {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 28px 10px 29px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: inherit;
+  
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    
+  
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .mailing__icon {
+    /* align-items: center;
+    justify-content: center;
+    position: absolute; */
+    margin-left: 10px;
+  }
